@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/home_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/third_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ProgressBar android:layout_gravity="center_horizontal" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_marginRight="0.0dip" android:indeterminateDrawable="@drawable/selector_progress" android:indeterminateDuration="500" android:indeterminateBehavior="repeat" />
+        <hdp.widget.ShimmerTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/third_txt" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="页面载入中···" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/progress_so" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/progressBarStyleHorizontal" />
+    <hdp.widget.ShimmerTextView android:textSize="20.0sp" android:textColor="#ffff9b00" android:id="@id/banben" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="@string/banben" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ProgressBar android:id="@id/about_progress" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginRight="10.0dip" android:indeterminateDrawable="@drawable/selector_progress" android:indeterminateDuration="500" android:indeterminateBehavior="repeat" />
+        <hdp.widget.ShimmerTextView android:textSize="20.0sp" android:textColor="#ffafeeee" android:gravity="center|left" android:id="@id/start_load_tv" android:layout_width="240.0dip" android:layout_height="fill_parent" android:text="正在导入自定义节目列表···" />
+    </LinearLayout>
+</RelativeLayout>

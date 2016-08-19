@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/bg_all" android:background="@drawable/mybg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/c1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/exit_continue" android:background="@drawable/exit_selector" android:focusable="true" android:nextFocusRight="@id/gallery_vod" android:nextFocusDown="@id/exit_back_live" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:focusable="false" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/ic_play" />
+                <Button android:textSize="18.0sp" android:textColor="@color/channel_list_item_text" android:gravity="center" android:id="@id/cont_btn" android:background="@null" android:focusable="false" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="25.0dip" android:text="@string/vod_continue" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/exit_back_live" android:background="@drawable/exit_selector" android:focusable="true" android:nextFocusRight="@id/gallery_vod" android:nextFocusUp="@id/exit_continue" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:focusable="false" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/ic_back" />
+                <Button android:textSize="18.0sp" android:textColor="@color/channel_list_item_text" android:gravity="center" android:id="@id/ex_btn" android:background="@null" android:focusable="false" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="25.0dip" android:text="@string/vod_exit" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/line1" android:background="@drawable/exit_divider" android:layout_width="1.0dip" android:layout_height="300.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="40.0dip" android:layout_toRightOf="@id/c1" android:layout_centerVertical="true" />
+        <hdp.widget.GalleryAlignLeft android:id="@id/gallery_vod" android:background="@null" android:nextFocusLeft="@id/exit_continue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/line1" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center" android:id="@id/footer_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" />
+    </LinearLayout>
+</RelativeLayout>

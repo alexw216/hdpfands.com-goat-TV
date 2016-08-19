@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="gtv.iaarc.com">
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="androd.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <uses-feature android:name="android.hardware.type.television" android:required="true"/>
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="hdp.http.MyApp" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <receiver android:name="com.baidu.bottom.service.BottomReceiver">
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+                <action android:name="android.net.wifi.SCAN_RESULTS"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="hdp.player.GuideActivity" android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="hdp.player.StartActivity" android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="com.hdpfans.live.start"/>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="hdp.player.AppActivity" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.AndroidDm"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="io.vov.vitamio.activity.InitActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:launchMode="singleInstance" android:name="hdp.player.LivePlayerNew" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.hdpfans.live.player"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleInstance" android:name="hdp.player.vod.VodPlayActy" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.hdpfans.live.player.vod"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="hdp.player.FileList" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.AndroidDm"/>
+        <activity android:name="hdp.player.HuiboList" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.AndroidDm"/>
+        <activity android:name="hdp.player.ManChannel" android:screenOrientation="sensorLandscape"/>
+        <activity android:name="hdp.player.Bangding" android:screenOrientation="sensorLandscape"/>
+        <activity android:name="hdp.player.TimeActivity" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.AndroidDm_time"/>
+        <activity android:name="hdp.player.ShengFenActivity" android:screenOrientation="sensorLandscape" android:theme="@style/Theme.AndroidDm"/>
+        <activity android:launchMode="singleTop" android:name="hdp.player.RemindActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Dialog.NoActionBar"/>
+        <receiver android:name="hdp.util.UsbReciver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="hdp.util.TvBootReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.yyxu.download.services.DownloadService">
+            <intent-filter>
+                <action android:name="com.yyxu.download.services.IDownloadService"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="hdp.keepsocket.KeepSocketService">
+            <intent-filter>
+                <action android:name="hdp.keepsocket.KeepSocketService"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="hdp.http.DiyService" android:process=":remote">
+            <intent-filter>
+                <action android:name="hdp.http.Hdiy"/>
+                <action android:name="hdpfans.com.aidl.Hdiy"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.tvbus.engine.TVService"/>
+        <service android:name="hdp.http.ZimuService"/>
+        <service android:name="hdp.player.DownloadPicturesService"/>
+        <service android:name="hdp.player.DownLoadEPGService"/>
+        <service android:name="hdp.keepsocket.ObserverNetService" android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="hdp.keepsocket.RemindBroadcastReceiver" android:process=":remote"/>
+        <receiver android:name="com.terminalmonitoringlib.broadcast.BootBroadcastReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.terminalmonitoringlib.service.Remote" android:priority="1000" android:process="com.andorid.tm.remote01">
+            <intent-filter>
+                <action android:name="com.andorid.terminalmonitoringlib.service.IMonitoringService1.0"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.terminalmonitoringlib.service.MyService" android:priority="1000" android:process="com.andorid.tm.myService">
+            <intent-filter>
+                <action android:name="com.andorid.terminalmonitoringlib.service.IMonitoringService"/>
+            </intent-filter>
+        </service>
+        <service android:name="hdpfans.com.service.MyService">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.iflytek.xiri2.app.NOTIFY"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="BaiduMobAd_CHANNEL" android:value="shafa"/>
+        <meta-data android:name="BaiduMobAd_STAT_ID" android:value="d2b5371915"/>
+    </application>
+</manifest>

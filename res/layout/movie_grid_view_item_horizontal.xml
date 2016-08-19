@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/movie_grid_view_relative_layout" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/cellroot" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+            <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <hdp.widget.SkinMovieItem android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/mv_shape_hide" android:background="@drawable/movie_shape_bg" android:focusable="false" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                <ImageView android:layout_gravity="center|top" android:id="@id/movie_grid_view_item_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:scaleType="fitXY" />
+                <hdp.widget.MarqueeTextView android:textSize="@dimen/cell_movice_text" android:textColor="@color/channel_list_item_text" android:ellipsize="marquee" android:gravity="bottom|center" android:layout_gravity="bottom|center" android:id="@id/movie_grid_view_item_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="50.0dip" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+                <hdp.widget.SkinMovieItem android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/mv_shape" android:background="@drawable/movie_shape_bg" android:focusable="false" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/cell_movice_name" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/movie_name" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="feed_choices">
+        <item>无法播放</item>
+        <item>偶尔卡顿</item>
+        <item>黑屏</item>
+        <item>闪退</item>
+    </string-array>
+</resources>

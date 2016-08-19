@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/live_channel_list_item_bg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="400.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:textColor="@color/channel_list_item_text" android:gravity="center|left" android:id="@id/live_channellist_item_num_txt" android:layout_width="70.0dip" android:layout_height="23.0dip" android:layout_marginRight="15.0dip" android:text="188888" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/channel_list_item_text" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/live_channellist_item_name_txt" android:focusable="true" android:layout_width="fill_parent" android:layout_height="23.0dip" android:layout_marginRight="10.0dip" android:text="湖南卫视" android:singleLine="true" android:layout_toLeftOf="@id/channel_icons_layout" android:layout_toRightOf="@id/live_channellist_item_num_txt" android:marqueeRepeatLimit="marquee_forever" />
+        <LinearLayout android:id="@id/channel_icons_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <hdp.widget.TextIcon android:id="@id/live_channellist_item_huikan_img" android:background="@drawable/lv_channel_item_hui_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="回" />
+            <hdp.widget.TextIcon android:id="@id/live_channellist_item_sharp_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            <ImageView android:id="@id/live_channellist_item_fav_img" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/live_channel_list_item_fav" android:scaleType="fitCenter" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="@color/channel_list_item_epg_text" android:ellipsize="marquee" android:gravity="left" android:id="@id/tv_channel_epg" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="我是color" android:singleLine="true" android:layout_toLeftOf="@id/tv_icon_new" android:marqueeRepeatLimit="marquee_forever" />
+        <ImageView android:id="@id/tv_icon_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:src="@drawable/tag_new" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

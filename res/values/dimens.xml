@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="app_name">40.0sp</dimen>
+    <dimen name="app_item_h">80.0dip</dimen>
+    <dimen name="app_pop">200.0dip</dimen>
+    <dimen name="app_p_h">220.0dip</dimen>
+    <dimen name="dialog_min_width">380.0dip</dimen>
+    <dimen name="dialog_min_height">200.0dip</dimen>
+    <dimen name="dialog_title_padding_h">20.0dip</dimen>
+    <dimen name="dialog_title_padding_v">15.0dip</dimen>
+    <dimen name="dialog_title_text_size">30.0sp</dimen>
+    <dimen name="dialog_title_split_height">2.0dip</dimen>
+    <dimen name="dialog_progress_margin_top">20.0dip</dimen>
+    <dimen name="dialog_progress_margin_h">20.0dip</dimen>
+    <dimen name="dialog_progress_height">15.0dip</dimen>
+    <dimen name="dialog_content_min_width">300.0dip</dimen>
+    <dimen name="dialog_content_margin_h">20.0dip</dimen>
+    <dimen name="dialog_content_padding_v">15.0dip</dimen>
+    <dimen name="dialog_content_text_size">28.0sp</dimen>
+    <dimen name="dialog_btn_layout_padding">8.0dip</dimen>
+    <dimen name="dialog_btn_margin">10.0dip</dimen>
+    <dimen name="dialog_btn_min_width">120.0dip</dimen>
+    <dimen name="dialog_btn_padding">8.0dip</dimen>
+    <dimen name="dialog_btn_text_size">28.0sp</dimen>
+    <dimen name="cell_movice_text">16.0sp</dimen>
+    <dimen name="cell_movice_name">14.0sp</dimen>
+    <dimen name="cell_movice_text_focus">14.0sp</dimen>
+    <dimen name="video_loading_width">90.0dip</dimen>
+    <dimen name="video_loading_height">90.0dip</dimen>
+</resources>

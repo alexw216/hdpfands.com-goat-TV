@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/blankView" android:background="@null" android:focusable="false" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/cell_imv_" android:focusable="false" android:layout_width="100.0dip" android:layout_height="150.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" />
+        <ImageView android:id="@id/cell_bg" android:background="@drawable/movie_shape_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" />
+    </FrameLayout>
+    <TextView android:textSize="16.0sp" android:ellipsize="end" android:gravity="center|left" android:id="@id/cell_tips" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" android:maxLines="2" />
+</LinearLayout>

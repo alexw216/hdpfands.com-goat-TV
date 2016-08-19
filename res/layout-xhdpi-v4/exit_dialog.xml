@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/bg_all" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/leftLay" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/tv_version_tips" android:background="@drawable/menu_bg_n" android:paddingLeft="5.0dip" android:layout_width="214.0dip" android:layout_height="222.0dip" android:text="@string/version_tips" />
+        <hdp.widget.SkinExitButton android:textColor="@color/exit_button_textcolor" android:id="@id/player_exist_play_bt" android:nextFocusRight="@id/ext__right" android:text="@string/quitmenu" android:drawableLeft="@drawable/exit_play_n" style="@style/exit_window_btn" />
+        <hdp.widget.SkinExitButton android:textColor="@color/exit_button_textcolor" android:id="@id/player_exist_exit_bt" android:text="@string/quitlive" android:drawableLeft="@drawable/exit_n" style="@style/exit_window_btn" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/right_lay" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left" android:layout_gravity="center|left|top" android:orientation="vertical" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/player_exist_bg" android:focusable="false" android:focusableInTouchMode="false" android:src="@drawable/home_bg" android:contentDescription="@string/exit_img_link" style="@style/exit_pic_img" />
+            <ProgressBar android:id="@id/downapp_progressBar" android:visibility="gone" android:layout_width="428.0dip" android:layout_height="5.0dip" android:max="100" android:progressDrawable="@drawable/exit_downloadbar_color" style="?android:attr/progressBarStyleHorizontal" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom|center|left" android:orientation="horizontal" android:id="@id/download_guide" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+            <ImageView android:layout_gravity="center|left" android:id="@id/ext__right" android:focusable="false" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/ext_left_anima" android:contentDescription="@string/exit_img_link" />
+            <ImageView android:layout_gravity="left" android:id="@id/ext__circle" android:background="@null" android:focusable="true" android:visibility="gone" android:layout_width="110.0dip" android:layout_height="110.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/ext_download_circle" android:contentDescription="@string/exit_img_link" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom|center|left" android:orientation="horizontal" android:id="@id/red_layers" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/dashang_indi" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:src="@drawable/red_indi" android:contentDescription="@string/exit_img_link" />
+            <Button android:layout_gravity="center|left" android:id="@id/da1" android:background="@drawable/red_selector_5" android:nextFocusRight="@id/da2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="" />
+            <Button android:layout_gravity="center|left" android:id="@id/da2" android:background="@drawable/red_selector_10" android:nextFocusRight="@id/da4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="" />
+            <Button android:layout_gravity="center|left" android:id="@id/da4" android:background="@drawable/red_selector_20" android:nextFocusRight="@id/da5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="" />
+            <Button android:layout_gravity="center|left" android:id="@id/da5" android:background="@drawable/red_selector_50" android:nextFocusRight="@id/da7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="" />
+            <Button android:layout_gravity="center|left" android:id="@id/da7" android:background="@drawable/red_selector_sy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

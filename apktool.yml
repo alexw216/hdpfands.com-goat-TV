@@ -1,0 +1,45 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: hdpfans.com.apk
+compressionType: false
+doNotCompress:
+- arsc
+- jar
+- dat
+- zip
+- xml
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '14'
+sharedLibrary: false
+unknownFiles:
+  javamail.default.address.map: '8'
+  javamail.charset.map: '8'
+  javamail.smtp.provider: '8'
+  javamail.imap.provider: '8'
+  javamail.default.providers: '8'
+  mailcap: '8'
+  javamail.smtp.address.map: '8'
+  dsn.mf: '8'
+  javamail.pop3.provider: '8'
+  mimetypes.default: '8'
+  mailcap.default: '8'
+  org/apache/harmony/awt/internal/nls/messages.properties: '8'
+  com/j256/ormlite/core/LICENSE.txt: '8'
+  com/j256/ormlite/core/README.txt: '8'
+  com/j256/ormlite/android/LICENSE.txt: '8'
+  com/j256/ormlite/android/README.txt: '8'
+  com/iflytek/xiri/appservice/version: '8'
+  com/iflytek/xiri/feedback/version: '8'
+  com/iflytek/xiri/scene/version: '8'
+  com/sun/mail/dsn/mailcap: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.1.7
+versionInfo:
+  versionCode: '77'
+  versionName: 2.1.7

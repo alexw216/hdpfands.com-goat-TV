@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:fadingEdge="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/menu_up" android:background="@drawable/menu_more_two" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/menu_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <hdp.widget.SkinMenuLinear android:id="@id/player_menu_advol" style="@style/exit_menu_large">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/menu_vol" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/menu_control_text" android:gravity="center|right" android:id="@id/player_menu_vol_tv1" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:text="@string/changes" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/player_menu_vol_left" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="18.0dip" android:src="@drawable/menu_left" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textColor="@color/menu_control_text" android:gravity="center" android:id="@id/player_menu_vol_tv" android:duplicateParentState="true" android:layout_width="90.0dip" android:layout_height="fill_parent" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/player_menu_vol_right" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/menu_right" />
+            </hdp.widget.SkinMenuLinear>
+            <hdp.widget.SkinMenuLinear android:id="@id/player_menu_turn" style="@style/exit_menu_large">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/sxhuantai" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/menu_control_text" android:gravity="center|right" android:id="@id/player_menu_turn_tv1" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:text="@string/huantaimoshi" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/player_menu_turn_left" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="18.0dip" android:src="@drawable/menu_left" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textColor="@color/menu_control_text" android:gravity="center" android:id="@id/player_menu_turn_tv" android:duplicateParentState="true" android:layout_width="90.0dip" android:layout_height="fill_parent" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/player_menu_turn_right" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/menu_right" />
+            </hdp.widget.SkinMenuLinear>
+            <hdp.widget.SkinMenuLinear android:id="@id/player_menu_sclar" style="@style/exit_menu_large">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/menu_scaler" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/menu_control_text" android:gravity="center|right" android:id="@id/player_menu_sclar_tv1" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:text="@string/sca" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/player_menu_sclar_right" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="18.0dip" android:src="@drawable/menu_left" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textColor="@color/menu_control_text" android:gravity="center" android:id="@id/player_menu_sclar_tv" android:duplicateParentState="true" android:layout_width="90.0dip" android:layout_height="fill_parent" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/player_menu_sclar_left" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/menu_right" />
+            </hdp.widget.SkinMenuLinear>
+            <hdp.widget.SkinMenuLinear android:id="@id/player_menu_jiema" style="@style/exit_menu_large">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/jiemahuan" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/menu_control_text" android:gravity="center|right" android:id="@id/player_menu_jiema_tv1" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:text="@string/jiema" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/player_menu_jiema_left" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="18.0dip" android:src="@drawable/menu_left" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textColor="@color/menu_control_text" android:gravity="center" android:id="@id/player_menu_jiema_tv" android:duplicateParentState="true" android:layout_width="90.0dip" android:layout_height="fill_parent" android:text="@string/yingjie" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/player_menu_jiema_right" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/menu_right" />
+            </hdp.widget.SkinMenuLinear>
+            <hdp.widget.SkinMenuLinear android:id="@id/player_menu_tvstart" style="@style/exit_menu_large">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/menu_tvlist" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/menu_control_text" android:gravity="center|right" android:id="@id/player_menu_tvstart_tv1" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:text="@string/begin" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/player_menu_tvstart_right" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="18.0dip" android:src="@drawable/menu_left" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textColor="@color/menu_control_text" android:gravity="center" android:id="@id/player_menu_tvstart_tv" android:duplicateParentState="true" android:layout_width="90.0dip" android:layout_height="fill_parent" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/player_menu_tvstart_left" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/menu_right" />
+            </hdp.widget.SkinMenuLinear>
+            <hdp.widget.SkinMenuLinear android:id="@id/player_menu_tvsize" style="@style/exit_menu_large">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/menu_tvsize" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/menu_control_text" android:gravity="center|right" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:text="@string/tvsize" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/player_menu_tvsize_left" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="18.0dip" android:src="@drawable/menu_left" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textColor="@color/menu_control_text" android:gravity="center" android:id="@id/player_menu_tvsize_tv" android:duplicateParentState="true" android:layout_width="90.0dip" android:layout_height="fill_parent" android:text="大" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/player_menu_tvsize_right" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/menu_right" />
+            </hdp.widget.SkinMenuLinear>
+            <hdp.widget.SkinMenuLinear android:id="@id/player_menu_epgShow" style="@style/exit_menu_large">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/menu_epg" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/menu_control_text" android:gravity="center|right" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:text="@string/epgshow" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/player_menu_epgshow_left" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="18.0dip" android:src="@drawable/menu_left" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textColor="@color/menu_control_text" android:gravity="center" android:id="@id/player_menu_epgshow_tv" android:duplicateParentState="true" android:layout_width="90.0dip" android:layout_height="fill_parent" android:text="是" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/player_menu_epgshow_right" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/menu_right" />
+            </hdp.widget.SkinMenuLinear>
+            <hdp.widget.SkinMenuLinear android:id="@id/player_menu_hbwsjm" style="@style/exit_menu_large">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/hbwsjm" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/menu_control_text" android:gravity="center|right" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:text="@string/hbwsjm" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/player_menu_hbwsjm_left" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="18.0dip" android:src="@drawable/menu_left" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textColor="@color/menu_control_text" android:gravity="center" android:id="@id/player_menu_hbwsjm_tv" android:duplicateParentState="true" android:layout_width="90.0dip" android:layout_height="fill_parent" android:text="@string/wsjm_close" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/player_menu_hbwsjm_right" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/menu_right" />
+            </hdp.widget.SkinMenuLinear>
+            <hdp.widget.SkinMenuLinear android:id="@id/player_menu_skin" style="@style/exit_menu_large">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/menu_icon_skin" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/menu_control_text" android:gravity="center|right" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:text="@string/skin_tip" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/player_menu_skin_left" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="18.0dip" android:src="@drawable/menu_left" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textColor="@color/menu_control_text" android:gravity="center" android:id="@id/player_menu_skin_tv" android:duplicateParentState="true" android:layout_width="90.0dip" android:layout_height="fill_parent" android:text="@string/skin_default" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/player_menu_skin_right" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/menu_right" />
+            </hdp.widget.SkinMenuLinear>
+            <hdp.widget.SkinMenuLinear android:id="@id/player_plugin_p2p" style="@style/exit_menu_large">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/menu_icon_skin" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/menu_control_text" android:gravity="center|right" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:text="@string/skin_tip" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/player_p2p_left" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="18.0dip" android:src="@drawable/menu_left" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textColor="@color/menu_control_text" android:gravity="center" android:id="@id/player_p2p_text" android:duplicateParentState="true" android:layout_width="90.0dip" android:layout_height="fill_parent" android:text="@string/skin_default" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/player_p2p_right" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/menu_right" />
+            </hdp.widget.SkinMenuLinear>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/menu_two" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <hdp.widget.SkinMenuLinear android:id="@id/menu_huikan" style="@style/exit_menu_large">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/huikan" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/menu_control_text" android:gravity="center" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/menu_huikan" />
+            </hdp.widget.SkinMenuLinear>
+            <hdp.widget.SkinMenuLinear android:id="@id/player_set" style="@style/exit_menu_large">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/controlman" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/menu_control_text" android:gravity="center" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/pingdaoguanli" />
+            </hdp.widget.SkinMenuLinear>
+            <hdp.widget.SkinMenuLinear android:id="@id/menu_tui_app" android:visibility="visible" style="@style/exit_menu_large">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/apptuijian" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/menu_control_text" android:gravity="center" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/menu_app" />
+            </hdp.widget.SkinMenuLinear>
+            <hdp.widget.SkinMenuLinear android:id="@id/menu_server" android:visibility="visible" style="@style/exit_menu_large">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/wifi_server" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/menu_control_text" android:gravity="center" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/menu_server" />
+            </hdp.widget.SkinMenuLinear>
+            <hdp.widget.SkinMenuLinear android:id="@id/player_chekupdate" style="@style/exit_menu_large">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/update_icon" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/menu_control_text" android:gravity="center" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/check_update" />
+            </hdp.widget.SkinMenuLinear>
+            <hdp.widget.SkinMenuLinear android:id="@id/player_timeout" style="@style/exit_menu_large">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/tuchaoshi" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/menu_control_text" android:gravity="center" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/timeout" />
+            </hdp.widget.SkinMenuLinear>
+            <hdp.widget.SkinMenuLinear android:id="@id/menu_bangding" style="@style/exit_menu_large">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/userid" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/menu_control_text" android:gravity="center" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/menu_bang" />
+            </hdp.widget.SkinMenuLinear>
+            <hdp.widget.SkinMenuLinear android:id="@id/menu_shengfen" style="@style/exit_menu_large">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/menu_sheng" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/menu_control_text" android:gravity="center" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/menu_shengfen" />
+            </hdp.widget.SkinMenuLinear>
+            <hdp.widget.SkinMenuLinear android:id="@id/memory_clear" style="@style/exit_menu_large">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/clearc" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/menu_control_text" android:gravity="center" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/clear_memory" />
+            </hdp.widget.SkinMenuLinear>
+            <hdp.widget.SkinMenuLinear android:id="@id/menu_clear" style="@style/exit_menu_large">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/clearc" />
+                <hdp.widget.SkinTextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="@color/menu_control_text" android:gravity="center" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/clear_reboot" />
+            </hdp.widget.SkinMenuLinear>
+        </LinearLayout>
+        <Button android:layout_gravity="center_horizontal" android:id="@id/menu_down" android:background="@drawable/menu_more_one" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+</ScrollView>

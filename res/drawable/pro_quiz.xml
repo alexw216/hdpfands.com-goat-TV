@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android:drawable="@drawable/setting_bright_seekbar_background" />
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="1.0dip" />
+                <gradient android:width="1.0dip" android:startColor="@color/transparent" android:endColor="@color/transparent" android:angle="90.0" android:centerY="0.5" android:centerColor="#ff5a5a5a" />
+                <stroke android:width="0.0dip" android:color="@color/transparent" android:dashWidth="0.0dip" android:dashGap="0.0dip" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="mediacontroller_bg_pressed">#ff53c1bd</color>
+    <color name="mediacontroller_bg">#99000000</color>
+    <color name="bg_whitef5">#fff5f5f5</color>
+    <color name="def_grey">#ffcccccc</color>
+    <color name="shime_default">#fff8f8ff</color>
+    <color name="shime_default_end">#fff7f7f7</color>
+    <color name="bg_lin_95">#ff959595</color>
+    <color name="player_item_sel">#99ff0000</color>
+    <color name="red_bg_yellow">#fffff458</color>
+    <color name="white">#ffffffff</color>
+    <color name="speed_color">#fffbf3d6</color>
+    <color name="china_red">#ffad0530</color>
+    <color name="china_white">#ffd99399</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="dark">#ffb2b2b2</color>
+    <color name="green">#ffb2ffb2</color>
+    <color name="detail_point">#ffffaa00</color>
+    <color name="detail_main_text">#ff999999</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffee2200</color>
+    <color name="blue_user">#ff00a8ff</color>
+    <color name="huise">#ff999999</color>
+    <color name="huisex">#ffffff00</color>
+    <color name="shenhui">#ff333333</color>
+    <color name="tvshow">#ff3366ff</color>
+    <color name="back">#ff333333</color>
+    <color name="grey_back">#ff474747</color>
+    <color name="ye">#ffffcc33</color>
+    <color name="yellow_pro">#fff39800</color>
+    <color name="orange">#ffffa500</color>
+    <color name="channel_list_item_epg_def_color">#a89a9fa4</color>
+    <color name="channel_list_item_epg_focus_color">#ff2d2d2d</color>
+    <color name="movie_yellow">#ffe78d23</color>
+</resources>

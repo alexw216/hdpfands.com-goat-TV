@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/vodreturn_ted" />
+    <item android:state_focused="false" android:drawable="@drawable/vodreturn" />
+    <item android:state_focused="true" android:drawable="@drawable/vodreturn_ted" />
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/player_item_sel" />
+            <stroke android:width="0.0dip" android:color="#99f8faf3" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/transparent" />
+            <stroke android:width="0.0dip" android:color="#99f8faf3" />
+        </shape>
+    </item>
+</selector>

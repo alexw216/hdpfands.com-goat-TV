@@ -1,0 +1,7 @@
+.class public interface abstract Lorg/dom4j/jaxb/JAXBObjectHandler;
+.super Ljava/lang/Object;
+
+
+# virtual methods
+.method public abstract handleObject(Ljavax/xml/bind/Element;)V
+.end method
